@@ -1,9 +1,9 @@
-let mybutton = document.querySelector(".button");
+let mybutton = document.querySelector("#myClick");
 mybutton.addEventListener("click", myClick);
 
 function myClick() {
     let name = prompt("Hello! What is your name?")
-    if (name === ""||null) {
+    if (name === null || "") {
         name = "there";
     }
     let ans = prompt(`Hello ${name}. What is your favourite weather?`);
